@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "organized_on": "2026-10-23",
+  "source_roots": {
+    "oss_assets": ".source-assets/oss",
+    "arduino_sketchbook": ".source-assets/arduino"
+  },
+  "files": [
+    {
+      "source_root": "oss_assets",
+      "source": "Object Sorting Conveyor Readme.pdf",
+      "destination": "docs/references/object-sorting-conveyor.pdf",
+      "source_sha256": "199a26d89189c2654bf365f31b93c8104bd94ff9404f9ca49ef072411c9cb9d2",
+      "repository_sha256": "199a26d89189c2654bf365f31b93c8104bd94ff9404f9ca49ef072411c9cb9d2",
+      "changes": []
+    },
+    {
+      "source_root": "oss_assets",
+      "source": "blender/conveyer_belt.blend",
+      "destination": "hardware/mechanical/conveyer_belt.blend",
+      "source_sha256": "e18fc6975f4d2b77898bf0a34493aa174500e84e7d9caff3bcd89f573582ec78",
+      "repository_sha256": "e18fc6975f4d2b77898bf0a34493aa174500e84e7d9caff3bcd89f573582ec78",
+      "changes": []
+    },
+    {
+      "source_root": "oss_assets",
+      "source": "blender/conveyer_belt.blend1",
+      "destination": "hardware/mechanical/conveyer_belt.blend1",
+      "source_sha256": "5d751e1ac56a64cf5ff8b4a35f3f719e54a1475607e47ca3b02e2f5d3812faa8",
+      "repository_sha256": "5d751e1ac56a64cf5ff8b4a35f3f719e54a1475607e47ca3b02e2f5d3812faa8",
+      "changes": []
+    },
+    {
+      "source_root": "oss_assets",
+      "source": "blender/Untitled.png",
+      "destination": "docs/assets/conveyor-render.png",
+      "source_sha256": "570ee12590458e35848de8cd13a46f77fa0e6bc1b20172346982fb0544aae355",
+      "repository_sha256": "570ee12590458e35848de8cd13a46f77fa0e6bc1b20172346982fb0544aae355",
+      "changes": []
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "OSS_NEW_TEST/OSS_NEW_TEST.ino",
+      "destination": "firmware/standalone/OSS_NEW_TEST/OSS_NEW_TEST.ino",
+      "source_sha256": "dd3fad4812ecf3884674e9c7dd36c9b3655e81924f4445daf605bf835ad1ff43",
+      "repository_sha256": "dd3fad4812ecf3884674e9c7dd36c9b3655e81924f4445daf605bf835ad1ff43",
+      "changes": []
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "OSS_UNO_TEST/OSS_UNO_TEST.ino",
+      "destination": "firmware/paired/arduino_uno/OSS_UNO_TEST/OSS_UNO_TEST.ino",
+      "source_sha256": "22ac9c78e9282a7752e113db7f57a91e80a4556ea278c1df4ca0ff212f0df29e",
+      "repository_sha256": "22ac9c78e9282a7752e113db7f57a91e80a4556ea278c1df4ca0ff212f0df29e",
+      "changes": []
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "OSS_CAM_TEST/OSS_CAM_TEST.ino",
+      "destination": "firmware/paired/esp32_s3/OSS_CAM_TEST/OSS_CAM_TEST.ino",
+      "source_sha256": "8c99add8baf96fc95624d5c1000c325ddaa18496166aef6fea5b67e2b4824763",
+      "repository_sha256": "57dfa96d681aa4329fdad6d9a89cc120acb816af85b8908bcc9255df14c5b7bd",
+      "changes": [
+        "Replaced embedded Wi-Fi SSID and password with placeholders."
+      ]
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "OSS_Three_Object/OSS_Three_Object.ino",
+      "destination": "firmware/vision/OSS_Three_Object/OSS_Three_Object.ino",
+      "source_sha256": "36f97ea903e7eaad031b58f5c077db84e3058ee026d4650226cd664ce21017af",
+      "repository_sha256": "36f97ea903e7eaad031b58f5c077db84e3058ee026d4650226cd664ce21017af",
+      "changes": []
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "OV3660_Collect_Images_for_EdgeImpulse/OV3660_Collect_Images_for_EdgeImpulse.ino",
+      "destination": "firmware/data_collection/OV3660_Collect_Images_for_EdgeImpulse/OV3660_Collect_Images_for_EdgeImpulse.ino",
+      "source_sha256": "f28fafe18c015faadee5a8391d60864cebd188bc307a9f93befe7096e4f0bf6f",
+      "repository_sha256": "84198baf9ace0dd2e6f303347556d88620b38baa71a0fb3ef20b7b25fc97407a",
+      "changes": [
+        "Replaced embedded Wi-Fi SSID and password with placeholders."
+      ]
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "SimpleStepperTest/SimpleStepperTest.ino",
+      "destination": "firmware/calibration/SimpleStepperTest/SimpleStepperTest.ino",
+      "source_sha256": "434733d7b800efcbc24febc770a05c99e1c3aaf36eac6d33ada1c342764f3ec1",
+      "repository_sha256": "434733d7b800efcbc24febc770a05c99e1c3aaf36eac6d33ada1c342764f3ec1",
+      "changes": []
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "servo_test/servo_test.ino",
+      "destination": "firmware/calibration/servo_test/servo_test.ino",
+      "source_sha256": "edf8cdb54c44798caccd093b88b95c4f75221d12020018702df5445ee6e57a36",
+      "repository_sha256": "edf8cdb54c44798caccd093b88b95c4f75221d12020018702df5445ee6e57a36",
+      "changes": []
+    }
+  ],
+  "model_exports": [
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "libraries/OwlV2_Test_inferencing",
+      "destination": "models/exports/OwlV2_Test_inferencing.zip",
+      "library_version": "1.0.1",
+      "file_count": 1334,
+      "tree_sha256": "3f0385d78ffee6aee36a324cab15493334e8a690cee2cfa21ddc3ce69ac21efd",
+      "archive_sha256": "f78f412f5d1475d98d020287814b003614ccd8b7a06fd591bc56030242a3214d",
+      "changes": []
+    },
+    {
+      "source_root": "arduino_sketchbook",
+      "source": "libraries/EdgeImpulse_OSS_inferencing",
+      "destination": "models/exports/EdgeImpulse_OSS_inferencing.zip",
+      "library_version": "1.0.5",
+      "file_count": 1334,
+      "tree_sha256": "4b8fe4b8ae225e023c47721776282a6e2c5611106a213cd84c1386039e0dd6f8",
+      "archive_sha256": "d8d379316647a74d311a76264ecf07de5f99355528442859917e2987ccc7abbf",
+      "changes": []
+    }
+  ],
+  "excluded_libraries": [
+    {
+      "name": "AccelStepper",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "AceButton",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_BusIO",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_GFX_Library",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_ILI9341",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_MPU6050",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_Motor_Shield_V2_Library",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_SH110X",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_SSD1306",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_STMPE610",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_TSC2007",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_TouchScreen",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Adafruit_Unified_Sensor",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Async_TCP",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Blynk",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "BlynkNcpDriver",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "EloquentEsp32cam",
+      "reason": "Install separately: used by OSS sketches."
+    },
+    {
+      "name": "Firmata",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "MPU6050",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Marlin",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "QTRSensors",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "Servo",
+      "reason": "Install separately: used by OSS sketches."
+    },
+    {
+      "name": "U8glib-HAL",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    },
+    {
+      "name": "VisioBot-Gestures_inferencing",
+      "reason": "Not referenced by the recovered top-level OSS sketches."
+    }
+  ],
+  "exclusion_policy": "Private administrative and financial materials are excluded from the public repository and its inventory."
+}

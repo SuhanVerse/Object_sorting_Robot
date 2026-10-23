@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "included_on": "2026-10-23",
+  "successful_operation_claimed": false,
+  "accuracy_claimed": false,
+  "files": [
+    {
+      "source_basename": "oss_demo_model.jpeg",
+      "destination": "docs/media/prototype-photo.jpeg",
+      "sha256": "e8f7581f7dfb6ccadce4ac98c9429491ee8057bcf2144179cae0dcb625273c82",
+      "status": "prototype_photo",
+      "byte_preserved": true
+    },
+    {
+      "source_basename": "oss_demo_video_notworking.mp4",
+      "destination": "docs/media/prototype-test-not-working.mp4",
+      "sha256": "34591d24e13f16ee350c48a51962872db8dd22bd1eb0eded684f30f957818e3d",
+      "status": "unsuccessful_prototype_test",
+      "byte_preserved": true,
+      "video": {
+        "duration_seconds": 9.793511,
+        "width": 480,
+        "height": 864,
+        "nominal_frame_rate": "60/1"
+      }
+    }
+  ]
+}

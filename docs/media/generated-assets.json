@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-23",
+  "generator": "Blender 5.2.2 LTS / EEVEE, 24 samples",
+  "simulation_type": "Keyframed kinematic concept, not a hardware test or physics simulation",
+  "video": {
+    "codec": "H.264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 360,
+    "duration_seconds": 15,
+    "audio": false
+  },
+  "assets": [
+    {
+      "path": "hardware/mechanical/oss_simulation.blend",
+      "sha256": "328a1f74dbec4168a2ff82d2575cd0d048367bc3748107b1d99332ef5ebeff0e"
+    },
+    {
+      "path": "docs/media/simulation-preview.png",
+      "sha256": "4da05fcaf818a585d4fe022ea49d363bdfb4bbf206855b14e754c6970f36d5a0"
+    },
+    {
+      "path": "docs/media/intended-sorting-simulation.mp4",
+      "sha256": "86e9d89cfa8f7adf366060203986e402433a76ea5d866370e6b363d5f356451c"
+    },
+    {
+      "path": "docs/media/simulation-validation.json",
+      "sha256": "1db47c7d9fd30228db60913900b3766ac77f71612ad3a3f65ed018b88f502722"
+    },
+    {
+      "path": "scripts/blender/create_simulation.py",
+      "sha256": "d7aef9b02a409541f176bc9ca8b267358f86a0e49b89061aa7231ba0d832bd16"
+    },
+    {
+      "path": "scripts/blender/validate_simulation.py",
+      "sha256": "44f5544526c46b1adf71c0ded763c8e6c91ad055f7b85f0b12a4107fbba5fe53"
+    }
+  ]
+}

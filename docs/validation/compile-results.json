@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-23",
+  "arduino_cli": "1.4.1",
+  "cores": {
+    "arduino:avr": "1.8.8",
+    "esp32:esp32": "3.3.11"
+  },
+  "libraries": {
+    "Servo": "1.3.0",
+    "EloquentEsp32cam": "2.7.15",
+    "OwlV2_Test_inferencing": "1.0.1"
+  },
+  "method": "Compile only in isolated /tmp workspace, using installed cores and libraries; OwlV2 model installed from repository ZIP. No upload or hardware operation.",
+  "results": [
+    {
+      "name": "standalone",
+      "board": "arduino:avr:uno",
+      "sketch": "firmware/standalone/OSS_NEW_TEST",
+      "exit_code": 0,
+      "flash_bytes": 2488,
+      "ram_bytes": 54
+    },
+    {
+      "name": "paired_uno",
+      "board": "arduino:avr:uno",
+      "sketch": "firmware/paired/arduino_uno/OSS_UNO_TEST",
+      "exit_code": 0,
+      "flash_bytes": 4880,
+      "ram_bytes": 388,
+      "warning_count": 0
+    },
+    {
+      "name": "stepper",
+      "board": "arduino:avr:uno",
+      "sketch": "firmware/calibration/SimpleStepperTest",
+      "exit_code": 0,
+      "flash_bytes": 1052,
+      "ram_bytes": 9,
+      "warning_count": 0
+    },
+    {
+      "name": "servo",
+      "board": "arduino:avr:uno",
+      "sketch": "firmware/calibration/servo_test",
+      "exit_code": 0,
+      "flash_bytes": 3636,
+      "ram_bytes": 417,
+      "warning_count": 0
+    },
+    {
+      "name": "camera_s3",
+      "board": "esp32:esp32:esp32s3:PSRAM=opi",
+      "sketch": "firmware/paired/esp32_s3/OSS_CAM_TEST",
+      "exit_code": 0,
+      "flash_bytes": 957362,
+      "ram_bytes": 55816,
+      "warning_count": 0
+    },
+    {
+      "name": "inference",
+      "board": "esp32:esp32:esp32cam",
+      "sketch": "firmware/vision/OSS_Three_Object",
+      "exit_code": 0,
+      "flash_bytes": 452565,
+      "ram_bytes": 41916,
+      "warning_count": 0
+    },
+    {
+      "name": "collection",
+      "board": "esp32:esp32:esp32cam",
+      "sketch": "firmware/data_collection/OV3660_Collect_Images_for_EdgeImpulse",
+      "exit_code": 0,
+      "flash_bytes": 1069029,
+      "ram_bytes": 62280,
+      "warning_count": 0
+    }
+  ]
+}

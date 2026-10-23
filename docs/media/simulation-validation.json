@@ -1,0 +1,56 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "scene": "OSS | intended sorting sequence",
+  "frame_count": 360,
+  "fps": 24,
+  "duration_seconds": 15,
+  "resolution": [
+    1280,
+    720
+  ],
+  "external_image_dependencies": 0,
+  "scripted_drivers": 0,
+  "validated": "Native scene opens; required objects, keyframe holds and three destinations match the concept specification",
+  "not_validated": "Physics, collisions, structural fit, electrical behavior, firmware timing, sensor response or AI accuracy",
+  "samples": [
+    {
+      "object": "A",
+      "scan_frames": [
+        35,
+        52
+      ],
+      "destination_frame": 110,
+      "destination_m": [
+        0.505,
+        -0.128,
+        0.029
+      ]
+    },
+    {
+      "object": "B",
+      "scan_frames": [
+        155,
+        172
+      ],
+      "destination_frame": 230,
+      "destination_m": [
+        0.505,
+        0.0,
+        0.029
+      ]
+    },
+    {
+      "object": "C",
+      "scan_frames": [
+        275,
+        292
+      ],
+      "destination_frame": 350,
+      "destination_m": [
+        0.505,
+        0.128,
+        0.029
+      ]
+    }
+  ]
+}

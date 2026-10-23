@@ -1,0 +1,112 @@
+{
+  "collection": "ASSET_IR_Sensor",
+  "root_object": "ASSET_IR_Sensor_ROOT",
+  "source_bounds_blender_m": {
+    "min": [
+      -0.6407367587089539,
+      -1.6894724369049072,
+      -0.08213424682617188
+    ],
+    "max": [
+      0.6407367587089539,
+      2.291313648223877,
+      0.5665073990821838
+    ],
+    "size": [
+      1.2814735174179077,
+      3.980786085128784,
+      0.6486416459083557
+    ]
+  },
+  "component_bounds_m": {
+    "min": [
+      -0.007688841782510281,
+      -0.023884717375040054,
+      0.0
+    ],
+    "max": [
+      0.007688841782510281,
+      0.023884717375040054,
+      0.007783700246363878
+    ],
+    "size": [
+      0.015377683565020561,
+      0.04776943475008011,
+      0.007783700246363878
+    ]
+  },
+  "source_uniform_scale": 0.012,
+  "scale_is_inferred": true,
+  "scale_evidence": "Inferred working scale: 0.012 m per authored unit; male header pitch approximately 2.54 mm. Physical dimensions are not independently verified.",
+  "orientation": "PCB in XY; component side +Z; centered XY; lowest point Z=0",
+  "mesh_object_count": 34,
+  "source_mesh_object_count": 35,
+  "removed_exact_duplicate_objects": [
+    "ir top.001"
+  ],
+  "vertex_count": 186892,
+  "polygon_count": 97570,
+  "material_count": 6,
+  "material_names": [
+    "black",
+    "blue",
+    "ir buttom",
+    "ir top",
+    "Material",
+    "Material.003"
+  ],
+  "object_names": [
+    "Cube",
+    "ir top",
+    "Cube.001",
+    "Cube.002",
+    "Sphere",
+    "Cube.005",
+    "Cube.006",
+    "Cube.007",
+    "Cube.010",
+    "Cube.012",
+    "Cube.013",
+    "Cube.014",
+    "Cube.011",
+    "Cube.008",
+    "Cube.009",
+    "Cube.015",
+    "Cube.016",
+    "Cube.017",
+    "Cylinder",
+    "Cube.018",
+    "Cylinder.001",
+    "Cube.021",
+    "Cube.022",
+    "Cylinder.002",
+    "Sphere.001",
+    "Cylinder.003",
+    "Cube.023",
+    "Cube.024",
+    "Cylinder.004",
+    "Cube.025",
+    "Cube.026",
+    "Cylinder.005",
+    "Sphere.002",
+    "ir buttom"
+  ],
+  "packed_images": [
+    "ir buttom",
+    "ir top"
+  ],
+  "transforms": {
+    "scale": [
+      0.012000000104308128,
+      0.012000000104308128,
+      0.012000000104308128
+    ],
+    "rotation_x_degrees": 0,
+    "location": [
+      -0.0,
+      -0.0036110468208789825,
+      0.0009856108808889985
+    ]
+  },
+  "license": "Unknown; no license statement was supplied with the model."
+}

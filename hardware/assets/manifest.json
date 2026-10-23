@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "included_on": "2026-10-23",
+  "scope": "User-supplied downloaded 3D sources, preserved originals, prepared libraries and conversion records. See per-asset SOURCE.json for license status.",
+  "assets": [
+    {
+      "path": "hardware/assets/README.md",
+      "sha256": "c7748780f77fdfcda67a9a666d7284376d6ea18dac0c7ce6ce1386bc00d5bf71"
+    },
+    {
+      "path": "hardware/assets/esp32_sketchup/SOURCE.json",
+      "sha256": "8e7ef5af170c9141324cf155a33e87a511067cfa7e872aac9ba53a750348a133"
+    },
+    {
+      "path": "hardware/assets/esp32_sketchup/model_thumbnail.png",
+      "sha256": "cc26d30a90666b9dbe94485b937e28e9131d94ce0fc5280f3e1c1eb88a9708e9"
+    },
+    {
+      "path": "hardware/assets/esp32_sketchup/preview_thumbnail.png",
+      "sha256": "2c1ea7aed5441d58cc90ce799e85c5c056d455d22f558480ba586ff2629733a9"
+    },
+    {
+      "path": "hardware/assets/esp32_sketchup/source/esp32.skp",
+      "sha256": "0fcf02ce8cabebc5eaf068cc2629dccb709e28ea1e475862df82616123726d3c"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/SOURCE.json",
+      "sha256": "b70c82fd005afb73dc957a06440e911ad104f6dd6bbe9949f76ac5151545b3ae"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/blender_inspection.json",
+      "sha256": "f97e8d02187795214078ffe65bec20327e8dbf241ba8d6edfa27bf83b2e40f73"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/conversion.json",
+      "sha256": "3f8a467f12532b4dafa74fb6f3ae50cdea5c95c3242fc9d40abdbdc267b05735"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/freenove_esp32_s3_cam.blend",
+      "sha256": "09c838db06ff403e17e037f6eacec45a4e048b8bdc6c25f88ff6107394d1a0c1"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/freenove_esp32_s3_cam.glb",
+      "sha256": "595fe25c582041feb8fec4d6a4928e332f7bc468c7bb71427d78a093a6a23709"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/preview.png",
+      "sha256": "f89298fffddb508ec3c109737d7893adb0d86bc304cc0deebe6b33ced042c787"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/0ba68c4f-2f5d-44fd-af09-5c3e103080ed.PNG",
+      "sha256": "d3a2c74e30c999a78c8621102baf62719650da9cf968aca0f32d94d23800d5ce"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/8a31cec6-aebe-426c-bc95-c7b868c0dac6.PNG",
+      "sha256": "f6a332f8fccdedceda249821e8238e87e5862434b50be963b136b703e8209051"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/Freenove ESP32-S3-WROOM-CAM.step",
+      "sha256": "4f67dbb21f54c48544d73c01f60edcb3136c9e5cfe0aa512022fa5eab64247fe"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/Untitled_2024-Mar-26_07-07-35PM-000_CustomizedView6775533609.png",
+      "sha256": "1444717bf0c97e98274189b8ac80f518aea30ef59f1e55ee76fb06e5cd30d4ba"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/Untitled_2024-Mar-26_07-11-13PM-000_CustomizedView6119063521.png",
+      "sha256": "1d00df840a6066ca4df2802df0ed4c3a06bb10c1215d58feb4e7b0ccc1ac0139"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/Untitled_2024-Mar-26_07-16-14PM-000_CustomizedView22579522012.png",
+      "sha256": "0e55c9deababec575c98adaff8039604d2ed1559693aa49c21aeb3dd4daed9e0"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/Untitled_2024-Mar-26_07-27-23PM-000_CustomizedView35587976234.png",
+      "sha256": "ef0d8f63f46446c3a06a9a676f857dcd1c87d4628ad6e00710d1f8ef990a2c82"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/cef38fe5-1028-4431-9304-c00677153836.PNG",
+      "sha256": "4b5c9600ceb26e0358772a61b3cbf4632d9c2fddf4bc6c3efd6ad814a62706a7"
+    },
+    {
+      "path": "hardware/assets/freenove_esp32_s3_cam/source/d0198a34-1600-47e0-bb01-1eba57fd9497.PNG",
+      "sha256": "5d9f4743e9e75a46cae775fc02f2bd8245a6559d023db700af256763a9b371e5"
+    },
+    {
+      "path": "hardware/assets/ir_sensor/SOURCE.json",
+      "sha256": "17324eb02990fae5f1373674e823602873cb0bd85359774563aeefa5ecc9c051"
+    },
+    {
+      "path": "hardware/assets/ir_sensor/blender_inspection.json",
+      "sha256": "19f6c9c77d5bed10bcdd221ee51a049d75052446fdabc07ed09ba54eadb63bed"
+    },
+    {
+      "path": "hardware/assets/ir_sensor/ir_sensor.blend",
+      "sha256": "5fcdce61275c80c23318112bd06369320eb150b5a98dc780c565d194b1c18a7f"
+    },
+    {
+      "path": "hardware/assets/ir_sensor/preview.png",
+      "sha256": "ad304a6b88e8dd4ec855b1c5e4d785622f3c894065ede52382b7a1967f03496d"
+    },
+    {
+      "path": "hardware/assets/ir_sensor/source/ir sensor.glb",
+      "sha256": "7dd7b236d1c798761ab0c1a93f92a3fad788307bdccb9f6a31b1392f111d9025"
+    },
+    {
+      "path": "hardware/assets/ir_sensor/textures/ir buttom_1.png",
+      "sha256": "aecf6bd926ce64e39a8a0ff3f08b1ef0d0341c51307db88d730430f6caa52ae2"
+    },
+    {
+      "path": "hardware/assets/ir_sensor/textures/ir top_0.png",
+      "sha256": "e27e5a882fdfb4916b497a058d25864a08f17d4a568f19ff1088cb601f32bae9"
+    },
+    {
+      "path": "hardware/assets/prepare_libraries.py",
+      "sha256": "33ef968753b5fb69e2a765fbbd0216fa15f51918f2f43f2e1474a587ff3f3af8"
+    },
+    {
+      "path": "hardware/assets/verification.json",
+      "sha256": "19b89e36827be6b0fc3fe331a9d8dcbd68d2d0ac4315a90417ca0671e78f8ae6"
+    }
+  ]
+}

@@ -44,3 +44,7 @@ python3 scripts/check_repository.py --check-sources \
 The optional source check verifies source hashes, exact credential substitutions, and live model-library trees without printing credentials. Repeat `--source-root NAME=PATH` for each original folder; relative override paths are resolved from the current working directory. These overrides do not modify the inventory. Without overrides, the public inventory uses `.source-assets/oss` and `.source-assets/arduino` relative to the repository root. The `.source-assets/` directory is ignored by Git. Default checks work on a clone without the original folders.
 
 Source photos and video are recorded separately in `docs/media/source-media.json`. Generated visual assets are recorded in `docs/media/generated-assets.json` when present. The portable check validates both manifest formats and asset hashes, and rejects excluded private document paths from the public tree and Git index.
+
+## Reconstruction references and downloaded models
+
+The actual exhibition photograph, unsuccessful hardware footage, and original concept drawing are tracked in [source-media.json](media/source-media.json). Downloaded CAD sources, prepared Blender libraries, textures, and conversion records are tracked in [the hardware asset manifest](../hardware/assets/manifest.json), with provenance in [asset notes](../hardware/assets/README.md). These were added for the source-based reconstruction; private administrative and financial documents remain excluded.

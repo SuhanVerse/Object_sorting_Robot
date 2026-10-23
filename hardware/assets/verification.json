@@ -1,0 +1,31 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "checks": [
+    {
+      "asset": "freenove_esp32_s3_cam",
+      "appended_meshes": 223,
+      "evaluated_instance_meshes": 223,
+      "materials": 35,
+      "packed_image_count": 0,
+      "size_m": [
+        0.0572175532579422,
+        0.028200000524520874,
+        0.01747000125693321
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset": "ir_sensor",
+      "appended_meshes": 34,
+      "evaluated_instance_meshes": 34,
+      "materials": 6,
+      "packed_image_count": 2,
+      "size_m": [
+        0.015377683565020561,
+        0.04776943475008011,
+        0.007783700246363878
+      ],
+      "status": "PASS"
+    }
+  ]
+}

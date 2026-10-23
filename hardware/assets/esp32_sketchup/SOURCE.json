@@ -1,0 +1,31 @@
+{
+  "source_url": null,
+  "author": null,
+  "license": null,
+  "license_status": "No license file or explicit license statement was supplied. No redistribution permission is inferred.",
+  "verification_scope": "Geometry/metadata preservation and Blender import verified; not fabrication qualification.",
+  "asset_name": "ESP32-CAM SketchUp model",
+  "source_files": [
+    {
+      "path": "source/esp32.skp",
+      "size_bytes": 408533,
+      "sha256": "0fcf02ce8cabebc5eaf068cc2629dccb709e28ea1e475862df82616123726d3c"
+    }
+  ],
+  "observed_metadata": {
+    "SketchUp_version_string": "21.0.0",
+    "model_units": "Inches",
+    "archive_entries": 35,
+    "thumbnail_observation": "ESP32-CAM board with camera lens"
+  },
+  "conversion_status": "Native SKP preserved. Not converted: no supported SketchUp geometry importer is installed in Blender 5.2.2. No replacement geometry was fabricated.",
+  "prepared_files": [
+    "model_thumbnail.png",
+    "preview_thumbnail.png"
+  ],
+  "known_uncertainties": [
+    "Geometry bounds and model author are unknown; only archive metadata and supplied thumbnails were inspected.",
+    "No source URL or license statement was supplied."
+  ],
+  "original_download_file": "esp32.skp"
+}

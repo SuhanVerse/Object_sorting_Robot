@@ -1,0 +1,106 @@
+{
+  "source": "hardware/mechanical/conveyer_belt.blend",
+  "reconstruction": "hardware/mechanical/oss_simulation.blend",
+  "method": "Independent comparison of every polygon and corresponding evaluated world vertex after documented transforms.",
+  "retained_parts": [
+    {
+      "part": "Source bearings",
+      "source_object": "bearings",
+      "vertices": 556,
+      "faces": 288,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 1.862645149230957e-09
+    },
+    {
+      "part": "Source camera bridge",
+      "source_object": "Plane.002",
+      "vertices": 28,
+      "faces": 26,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 5.587935447692871e-09
+    },
+    {
+      "part": "Source drive roller",
+      "source_object": "pvc_outer.004",
+      "vertices": 128,
+      "faces": 68,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 1.862645149230957e-09
+    },
+    {
+      "part": "Source idler roller",
+      "source_object": "pvc_outer.001",
+      "vertices": 128,
+      "faces": 68,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 1.862645149230957e-09
+    },
+    {
+      "part": "Source NEMA17 motor",
+      "source_object": "NEMA 17 17HD40",
+      "vertices": 25378,
+      "faces": 50728,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 2.9802322387695312e-08
+    },
+    {
+      "part": "Source oval belt",
+      "source_object": "Plane.001",
+      "vertices": 112,
+      "faces": 58,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 4.0978193283081055e-08
+    },
+    {
+      "part": "Source PVC bearing sleeve",
+      "source_object": "pvc_outer",
+      "vertices": 140,
+      "faces": 72,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 1.862645149230957e-09
+    },
+    {
+      "part": "Source roller axles",
+      "source_object": "Cylinder",
+      "vertices": 828,
+      "faces": 426,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 9.313225746154785e-10
+    },
+    {
+      "part": "Source SG90 body",
+      "source_object": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd_Material.020_0",
+      "vertices": 6068,
+      "faces": 2813,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 1.0700081748027408e-08
+    },
+    {
+      "part": "Source SG90 shaft and detail",
+      "source_object": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd \ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd_Material.021_0",
+      "vertices": 3600,
+      "faces": 1524,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 1.0536712127723509e-08
+    },
+    {
+      "part": "Source timber side rails",
+      "source_object": "wood_body",
+      "vertices": 340,
+      "faces": 178,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 1.862645149230957e-09
+    },
+    {
+      "part": "Source workbench",
+      "source_object": "Cube",
+      "vertices": 8,
+      "faces": 6,
+      "exact_source_polygon_connectivity": true,
+      "max_vertex_residual_m": 0.0
+    }
+  ],
+  "maximum_vertex_residual_m": 4.0978193283081055e-08,
+  "passed": true,
+  "limits": "Geometry retention and layout only; not physical contact, dynamics, fit or fabrication validation."
+}

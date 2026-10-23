@@ -1,29 +1,43 @@
-# Prototype media
+# Prototype, concept, and animation
 
-This page separates original physical-prototype records from a new Blender concept animation. No successful hardware operation or sorting accuracy is claimed.
+## Physical exhibition prototype
 
-## Prototype photo
+<img src="prototype-photo.jpeg" width="360" alt="The real blue-belt OSS prototype with timber rails, camera bridge, controller and wiring">
 
-![Physical prototype with a blue conveyor belt, wooden side rails, mounted electronics, and wiring](prototype-photo.jpeg)
+The [original photograph](prototype-photo.jpeg) shows the physical model built for the YATRA 5.0 national event. It was supplied as `oss_demo_model.jpeg` and is preserved byte-for-byte.
 
-[Original prototype photo](prototype-photo.jpeg) — supplied as `oss_demo_model.jpeg`, copied without changing its bytes.
+The [original hardware video](prototype-test-not-working.mp4), supplied as `oss_demo_video_notworking.mp4`, is a 9.79-second unsuccessful test. The robot did **not** work as intended. The footage shows movement, but it does not establish successful recognition, sorting, or accuracy.
 
-## Unsuccessful prototype test
+## User's intended mechanism
 
-[Watch or download the original test video](prototype-test-not-working.mp4) — 9.79 seconds, 480 × 864 pixels. Supplied as `oss_demo_video_notworking.mp4`, copied without changing its bytes.
+![Original Excalidraw drawing of the side-mounted sweep arm and three collection bins](oss-conceptual-model.png)
 
-The robot did **not** work as intended during this test. This is a test record, not a successful sorting demonstration.
+The [drawing](oss-conceptual-model.png), supplied as `oss_conceptual_model.png`, is preserved unchanged. A and B are on opposite sides of the belt; C is at its end. A camera overlooks the loading area and a side-mounted servo turns a long arm across the belt.
 
-The visible sequence includes an object placed on the blue belt, belt movement, and a long metal arm changing angle across the belt. Wooden side rails, wired electronics, and a board mounted above the belt are visible. These observations do not establish successful detection, classification, routing, or accuracy.
+Original-file hashes are recorded in [source-media.json](source-media.json).
 
-Checksums and source basenames are recorded in [source-media.json](source-media.json).
+## Completed Blender reconstruction
 
-## Intended sorting animation
+![Animated reconstruction using the source conveyor and downloaded electronics](intended-sorting-preview.gif)
 
-[![Blender concept preview with a conveyor, camera, routing guide, and three bins](simulation-preview.png)](intended-sorting-simulation.mp4)
+The [editable scene](../../hardware/mechanical/oss_simulation.blend) completes the previous model using its original frame, loop belt, rollers, shafts, bearings, camera bridge, motor, and servo. The downloaded IR sensor and Freenove board geometry provide the electronics detail. [Reference analysis](../../hardware/mechanical/reference-analysis.md) separates measured source features from reconstruction choices.
 
-[Watch or download the concept video](intended-sorting-simulation.mp4) — 15 seconds, 1280 × 720, 24 fps, with no audio.
+This is an **18-second keyframed illustration of intended motion**, not a physical dynamics, firmware, or AI test. A and B demonstrate side routing by the long sweep arm; C continues to the end. The encoded animation carries a small persistent reconstruction label. The original failed hardware recording remains separate.
 
-This animation was rendered in Blender. It shows intended motion: load an object, move to the camera, pause, route toward one of three bins, and reset. Its persistent on-screen label says **KINEMATIC CONCEPT / NOT A HARDWARE TEST**. Routes A/B/C and their colors are illustrative; they do not establish a trained-model label mapping. Timing and dimensions are presentation assumptions.
+## Play or download
 
-The [editable scene](../../hardware/mechanical/oss_simulation.blend), [generation/render instructions](../../hardware/mechanical/README.md), [native scene checks](simulation-validation.json), and [generated-file hashes](generated-assets.json) are included. This scene does not run physical dynamics, firmware, sensor emulation, or inference.
+The GIF above plays in GitHub's README renderer. Download [H.264 MP4](https://github.com/SuhanVerse/Object_sorting_Robot/raw/refs/heads/main/docs/media/intended-sorting-simulation.mp4) or [VP9 WebM](https://github.com/SuhanVerse/Object_sorting_Robot/raw/refs/heads/main/docs/media/intended-sorting-simulation.webm).
+
+For a browser player with controls, after cloning:
+
+```sh
+python3 -m http.server 8765
+```
+
+Open [http://localhost:8765/docs/media/player.html](http://localhost:8765/docs/media/player.html). The player tries MP4 and WebM and keeps download/GIF links available. It can also be opened locally as [player.html](player.html); using the local server is the tested path. GitHub's HTML source viewer does not execute this player.
+
+The previous MP4 decoded and played in a browser test. The prior README supplied an ordinary file link rather than an embedded video player. The revised delivery therefore includes an inline GIF, an actual local video player, and explicit downloads rather than relying on GitHub's repository file viewer.
+
+Video formats: 1280 × 720, 24 fps, 432 frames, 18 seconds, no audio. The README GIF is 800 pixels wide at 8 fps.
+
+See [native scene validation](simulation-validation.json), [playback results](playback-validation.json), and [generated-asset hashes](generated-assets.json). [Mechanical documentation](../../hardware/mechanical/README.md) includes reproduction commands.

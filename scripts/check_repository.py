@@ -4,6 +4,7 @@
 import argparse
 from datetime import date
 import hashlib
+from html.parser import HTMLParser
 import json
 import math
 from pathlib import Path, PurePosixPath
@@ -15,6 +16,18 @@ import zipfile
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+class AssetReferences(HTMLParser):
+    """Collect local media/navigation references in README HTML and the player."""
+
+    def __init__(self):
+        super().__init__()
+        self.references = []
+
+    def handle_starttag(self, tag, attributes):
+        self.references.extend(value for key, value in attributes
+                               if key in {"src", "href", "poster"} and value)
 
 
 def digest(data):
@@ -96,7 +109,7 @@ def check_media_manifest(relative_path, list_key, path_key, errors, optional=Fal
             if (not isinstance(basename, str) or not basename or basename in {".", ".."}
                     or any(char in basename for char in ("/", "\\", "\0"))):
                 errors.append(f"{entry}: invalid source basename")
-            if item.get("status") not in ("prototype_photo", "unsuccessful_prototype_test"):
+            if item.get("status") not in ("prototype_photo", "unsuccessful_prototype_test", "concept_drawing"):
                 errors.append(f"{entry}: unsupported prototype status")
             if item.get("byte_preserved") is not True:
                 errors.append(f"{entry}: source media must preserve its original bytes")
@@ -228,17 +241,24 @@ def check(check_sources=False, source_roots=None):
                                              "destination", errors)
     generated_count = check_media_manifest("docs/media/generated-assets.json", "assets",
                                           "path", errors, optional=True)
+    hardware_asset_count = check_media_manifest("hardware/assets/manifest.json", "assets",
+                                               "path", errors)
     check_public_paths(errors)
 
     link_count = 0
-    for path in sorted(ROOT.rglob("*.md")):
+    for path in sorted(set(ROOT.rglob("*.md")) | set(ROOT.rglob("*.html"))):
         if {".git", ".source-assets"}.intersection(path.relative_to(ROOT).parts):
             continue
         content = path.read_text()
         if content.count("```") % 2:
             errors.append(f"Unbalanced Markdown code fences: {path.relative_to(ROOT)}")
-        for match in re.finditer(r'!?\[[^\]\n]*\]\(([^)\n]+)\)', content):
-            target = urlsplit(match.group(1).strip().strip("<>"))
+        references = [match.group(1).strip().strip("<>") for match in
+                      re.finditer(r'!?\[[^\]\n]*\]\(([^)\n]+)\)', content)]
+        parser = AssetReferences()
+        parser.feed(content)
+        references.extend(parser.references)
+        for reference in references:
+            target = urlsplit(reference)
             if target.scheme or target.netloc or not target.path:
                 continue
             link_count += 1
@@ -251,7 +271,8 @@ def check(check_sources=False, source_roots=None):
         return 1
     print(f"PASS: {len(inventory['files'])} imported files, {len(sketches)} sketches, "
           f"{len(inventory['model_exports'])} model archives, {source_media_count} source media, "
-          f"{generated_count} generated assets, {link_count} relative links.")
+          f"{generated_count} generated assets, {hardware_asset_count} hardware asset files, "
+          f"{link_count} relative links.")
     if check_sources:
         print("PASS: original source hashes, exact credential substitutions, and model trees.")
     return 0

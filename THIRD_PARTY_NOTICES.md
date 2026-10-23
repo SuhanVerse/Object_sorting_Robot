@@ -8,3 +8,7 @@ The pre-existing [GNU GPL v3 license](LICENSE) is retained. Third-party material
 - The technical reference PDF, Blender files, and render were supplied as project materials. Original content and embedded attribution are preserved. No new authorship claim or separate asset license is introduced.
 
 Exact sources, checksums, and credential substitutions are in the [inventory](docs/source-inventory.json).
+
+## Downloaded 3D assets
+
+The Freenove STEP board, IR sensor GLB/textures, and ESP32 SketchUp file were supplied from the user’s Downloads folder. [Asset provenance](hardware/assets/README.md) records file hashes, conversion details, and missing source URLs/author/license information. Their original materials and metadata are preserved; these files are not relabeled as GPL-authored project work. The native SKP is retained but not represented as successfully converted. The prepared IR library removes one verified duplicate texture plane while keeping the original GLB unchanged.

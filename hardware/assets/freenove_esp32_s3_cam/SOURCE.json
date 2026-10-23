@@ -1,0 +1,85 @@
+{
+  "source_url": null,
+  "author": null,
+  "license": null,
+  "license_status": "No license file or explicit license statement was supplied. No redistribution permission is inferred.",
+  "verification_scope": "Geometry/metadata preservation and Blender import verified; not fabrication qualification.",
+  "asset_name": "Freenove ESP32-S3-WROOM-CAM STEP assembly",
+  "source_files": [
+    {
+      "path": "source/0ba68c4f-2f5d-44fd-af09-5c3e103080ed.PNG",
+      "size_bytes": 447232,
+      "sha256": "d3a2c74e30c999a78c8621102baf62719650da9cf968aca0f32d94d23800d5ce"
+    },
+    {
+      "path": "source/8a31cec6-aebe-426c-bc95-c7b868c0dac6.PNG",
+      "size_bytes": 372018,
+      "sha256": "f6a332f8fccdedceda249821e8238e87e5862434b50be963b136b703e8209051"
+    },
+    {
+      "path": "source/Freenove ESP32-S3-WROOM-CAM.step",
+      "size_bytes": 24197302,
+      "sha256": "4f67dbb21f54c48544d73c01f60edcb3136c9e5cfe0aa512022fa5eab64247fe"
+    },
+    {
+      "path": "source/Untitled_2024-Mar-26_07-07-35PM-000_CustomizedView6775533609.png",
+      "size_bytes": 462625,
+      "sha256": "1444717bf0c97e98274189b8ac80f518aea30ef59f1e55ee76fb06e5cd30d4ba"
+    },
+    {
+      "path": "source/Untitled_2024-Mar-26_07-11-13PM-000_CustomizedView6119063521.png",
+      "size_bytes": 427671,
+      "sha256": "1d00df840a6066ca4df2802df0ed4c3a06bb10c1215d58feb4e7b0ccc1ac0139"
+    },
+    {
+      "path": "source/Untitled_2024-Mar-26_07-16-14PM-000_CustomizedView22579522012.png",
+      "size_bytes": 206097,
+      "sha256": "0e55c9deababec575c98adaff8039604d2ed1559693aa49c21aeb3dd4daed9e0"
+    },
+    {
+      "path": "source/Untitled_2024-Mar-26_07-27-23PM-000_CustomizedView35587976234.png",
+      "size_bytes": 250392,
+      "sha256": "ef0d8f63f46446c3a06a9a676f857dcd1c87d4628ad6e00710d1f8ef990a2c82"
+    },
+    {
+      "path": "source/cef38fe5-1028-4431-9304-c00677153836.PNG",
+      "size_bytes": 314799,
+      "sha256": "4b5c9600ceb26e0358772a61b3cbf4632d9c2fddf4bc6c3efd6ad814a62706a7"
+    },
+    {
+      "path": "source/d0198a34-1600-47e0-bb01-1eba57fd9497.PNG",
+      "size_bytes": 198092,
+      "sha256": "5d9f4743e9e75a46cae775fc02f2bd8245a6559d023db700af256763a9b371e5"
+    }
+  ],
+  "observed_header": {
+    "FILE_NAME": "Freenove ESP32-S3-WROOM-CAM.step",
+    "timestamp": "2024-03-26T19:38:28Z",
+    "author": [
+      ""
+    ],
+    "organization": [
+      ""
+    ],
+    "preprocessor": "ST-DEVELOPER v20",
+    "originating_system": "Autodesk Translation Framework v12.20.1.177",
+    "schema": "AUTOMOTIVE_DESIGN (AP214)",
+    "length_unit": "millimeter"
+  },
+  "prepared_files": [
+    "freenove_esp32_s3_cam.glb",
+    "freenove_esp32_s3_cam.blend",
+    "conversion.json",
+    "blender_inspection.json"
+  ],
+  "geometry_notes": [
+    "Original assembly and face colors preserved by XCAF.",
+    "Source contains Freenove ESP32-S3 board and camera connector; no fitted camera module is present in the supplied geometry.",
+    "GLB retains CAD orientation. Reusable Blender collection rotates +90 degrees around X so PCB lies XY and component side is +Z."
+  ],
+  "known_uncertainties": [
+    "The supplied local download does not identify a source URL, creator, or license.",
+    "Physical assembly dimensions are measured from CAD; no independent caliper measurements were supplied."
+  ],
+  "original_download_folder": "freenove-esp32-s3-wroom-cam-1.snapshot.1"
+}

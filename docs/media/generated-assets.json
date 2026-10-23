@@ -1,41 +1,90 @@
 {
   "schema_version": 1,
   "generated_on": "2026-10-23",
-  "generator": "Blender 5.2.2 LTS / EEVEE, 24 samples",
-  "simulation_type": "Keyframed kinematic concept, not a hardware test or physics simulation",
+  "generator": "Blender 5.2.2 LTS / EEVEE, 32 samples",
+  "basis": [
+    "Original conveyor scene and detailed motor/servo geometry",
+    "Physical prototype photograph",
+    "Original Excalidraw concept",
+    "Downloaded Freenove STEP and IR GLB assets"
+  ],
+  "simulation_type": "Keyframed reconstruction, not a hardware test, physics, firmware or AI simulation",
+  "bin_layout": {
+    "A": "negative Y side",
+    "B": "positive Y side",
+    "C": "positive X end"
+  },
   "video": {
-    "codec": "H.264",
+    "formats": [
+      "H.264 Constrained Baseline MP4",
+      "VP9 WebM"
+    ],
     "width": 1280,
     "height": 720,
     "fps": 24,
-    "frames": 360,
-    "duration_seconds": 15,
+    "frames": 432,
+    "duration_seconds": 18,
     "audio": false
+  },
+  "readme_gif": {
+    "width": 800,
+    "height": 450,
+    "fps": 8,
+    "frames": 144,
+    "duration_seconds": 18
   },
   "assets": [
     {
       "path": "hardware/mechanical/oss_simulation.blend",
-      "sha256": "328a1f74dbec4168a2ff82d2575cd0d048367bc3748107b1d99332ef5ebeff0e"
+      "sha256": "68c9f5fb8dd31637e514646e39c2d9140c0b27c347c6ea571bea8954ea4ad0d0"
     },
     {
       "path": "docs/media/simulation-preview.png",
-      "sha256": "4da05fcaf818a585d4fe022ea49d363bdfb4bbf206855b14e754c6970f36d5a0"
+      "sha256": "a29293bf9715b2310f42ca9661af14e2ab07b8cf2d15edb366519c315319de13"
     },
     {
       "path": "docs/media/intended-sorting-simulation.mp4",
-      "sha256": "86e9d89cfa8f7adf366060203986e402433a76ea5d866370e6b363d5f356451c"
+      "sha256": "7cf3e4ac67b063e352a0de38b48dbc773eaa5700a92f841d5bacc8a5f8d37cd8"
+    },
+    {
+      "path": "docs/media/intended-sorting-simulation.webm",
+      "sha256": "7e93ecf34a4cdf4700489637532560debdf0e988a6cdc015a5965c7ce3a197d2"
+    },
+    {
+      "path": "docs/media/intended-sorting-preview.gif",
+      "sha256": "0f4e3ce878236e9d5cd1ea77cbf9bf686f1a7ba53329469fda8794f86560ca1a"
+    },
+    {
+      "path": "docs/media/player.html",
+      "sha256": "e80d1b3dce819716f4d23292b7bcb9613eee1457578c4c3ebda85317aad76e03"
     },
     {
       "path": "docs/media/simulation-validation.json",
-      "sha256": "1db47c7d9fd30228db60913900b3766ac77f71612ad3a3f65ed018b88f502722"
+      "sha256": "4f07b8435f99fecb637b37aadfd8acad0e00196f57f9d84fad629f9c48692dd9"
+    },
+    {
+      "path": "docs/media/source-geometry-validation.json",
+      "sha256": "74d2f835b6b480f443fe655bfdfae97d082836254933d27730570dfbfc749cfe"
+    },
+    {
+      "path": "docs/media/playback-validation.json",
+      "sha256": "9d7b4ba01396eb123e4168ee6ccc202230add27d9c6f543407babbaf7153fb7f"
     },
     {
       "path": "scripts/blender/create_simulation.py",
-      "sha256": "d7aef9b02a409541f176bc9ca8b267358f86a0e49b89061aa7231ba0d832bd16"
+      "sha256": "75c4e185db65a7d86893a5594d8705c730dbba76030747a0dbb905c39538e2ad"
     },
     {
       "path": "scripts/blender/validate_simulation.py",
-      "sha256": "44f5544526c46b1adf71c0ded763c8e6c91ad055f7b85f0b12a4107fbba5fe53"
+      "sha256": "b454c190476965db2617ed8e13e346fc5212551f2e8965d14c810e34da194498"
+    },
+    {
+      "path": "scripts/blender/convert_cad_asset.py",
+      "sha256": "26bb45b0625ad55662367b164d91e2b8907a921d7086ab58768b094927800a68"
+    },
+    {
+      "path": "scripts/media/encode_animation.py",
+      "sha256": "58e445afdf46e98dfbb9fb2fae8fe293aefe2a7a2b53253b828707606ed93bb5"
     }
   ]
 }

@@ -1,0 +1,7 @@
+# Native CAD and 3D assets are preserved byte-for-byte and reviewed in their tools.
+*.blend binary
+*.blend1 binary
+*.glb binary
+*.skp binary
+*.step binary
+*.stp binary

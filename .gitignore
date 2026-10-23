@@ -34,3 +34,6 @@ Thumbs.db
 *.blend[0-9]*
 !hardware/mechanical/conveyer_belt.blend1
 *.blend@
+
+# Preserve local Blender edits without publishing backup copies
+hardware/mechanical/.local-backups/

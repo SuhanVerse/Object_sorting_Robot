@@ -1,55 +1,79 @@
 {
   "blender_version": "5.2.2 LTS",
-  "scene": "OSS | intended sorting sequence",
-  "frame_count": 360,
+  "scene": "OSS | reconstructed side-bin assembly",
+  "frame_count": 432,
   "fps": 24,
-  "duration_seconds": 15,
+  "duration_seconds": 18,
   "resolution": [
     1280,
     720
   ],
+  "retained_source_meshes": 12,
+  "source_motor_vertices": 25378,
+  "completed_belt_width_m": 0.088,
+  "downloaded_asset_instances": [
+    {
+      "instance": "Downloaded Freenove ESP32-S3 board",
+      "mesh_count": 223,
+      "library": "hardware/assets/freenove_esp32_s3_cam/freenove_esp32_s3_cam.blend"
+    },
+    {
+      "instance": "Downloaded IR sensor | Start",
+      "mesh_count": 34,
+      "library": "hardware/assets/ir_sensor/ir_sensor.blend"
+    },
+    {
+      "instance": "Downloaded IR sensor | Scan",
+      "mesh_count": 34,
+      "library": "hardware/assets/ir_sensor/ir_sensor.blend"
+    }
+  ],
   "external_image_dependencies": 0,
-  "scripted_drivers": 0,
-  "validated": "Native scene opens; required objects, keyframe holds and three destinations match the concept specification",
-  "not_validated": "Physics, collisions, structural fit, electrical behavior, firmware timing, sensor response or AI accuracy",
+  "bin_layout": {
+    "A": "negative Y side",
+    "B": "positive Y side",
+    "C": "positive X end"
+  },
+  "validated": "Source geometry retained, downloaded asset counts, opposite-side/end bins, scan holds, final poses, servo angle range, packed textures",
+  "not_validated": "Physics, contact forces, collision clearance, fabrication fit, hardware calibration, firmware timing or AI accuracy",
   "samples": [
     {
       "object": "A",
       "scan_frames": [
-        35,
-        52
+        32,
+        50
       ],
-      "destination_frame": 110,
+      "destination_frame": 122,
       "destination_m": [
-        0.505,
-        -0.128,
-        0.029
+        0.18,
+        -0.115,
+        -0.008
       ]
     },
     {
       "object": "B",
       "scan_frames": [
-        155,
-        172
+        176,
+        194
       ],
-      "destination_frame": 230,
+      "destination_frame": 266,
       "destination_m": [
-        0.505,
-        0.0,
-        0.029
+        0.18,
+        0.115,
+        -0.008
       ]
     },
     {
       "object": "C",
       "scan_frames": [
-        275,
-        292
+        320,
+        338
       ],
-      "destination_frame": 350,
+      "destination_frame": 416,
       "destination_m": [
-        0.505,
-        0.128,
-        0.029
+        0.375,
+        0.0004,
+        -0.008
       ]
     }
   ]

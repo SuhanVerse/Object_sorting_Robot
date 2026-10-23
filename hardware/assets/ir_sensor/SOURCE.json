@@ -1,0 +1,79 @@
+{
+  "source_url": null,
+  "author": null,
+  "license": null,
+  "license_status": "No license file or explicit license statement was supplied. No redistribution permission is inferred.",
+  "verification_scope": "Geometry/metadata preservation and Blender import verified; not fabrication qualification.",
+  "asset_name": "Infrared / IR obstacle sensor",
+  "source_files": [
+    {
+      "path": "source/ir sensor.glb",
+      "size_bytes": 6533308,
+      "sha256": "7dd7b236d1c798761ab0c1a93f92a3fad788307bdccb9f6a31b1392f111d9025"
+    }
+  ],
+  "asset_metadata": {
+    "generator": "Khronos glTF Blender I/O v3.5.30",
+    "version": "2.0"
+  },
+  "copyright": null,
+  "embedded_images": [
+    {
+      "bufferView": 8,
+      "mimeType": "image/png",
+      "name": "ir top"
+    },
+    {
+      "bufferView": 123,
+      "mimeType": "image/png",
+      "name": "ir buttom"
+    }
+  ],
+  "external_texture_files": [
+    {
+      "path": "textures/ir buttom_1.png",
+      "size_bytes": 48302,
+      "sha256": "aecf6bd926ce64e39a8a0ff3f08b1ef0d0341c51307db88d730430f6caa52ae2"
+    },
+    {
+      "path": "textures/ir top_0.png",
+      "size_bytes": 169745,
+      "sha256": "e27e5a882fdfb4916b497a058d25864a08f17d4a568f19ff1088cb601f32bae9"
+    }
+  ],
+  "prepared_files": [
+    "ir_sensor.blend",
+    "blender_inspection.json"
+  ],
+  "geometry_notes": [
+    "Original GLB retains all 35 mesh objects. Prepared library has 34 meshes: one exact coplanar duplicate texture plane (ir top.001) is removed after verifying identical transform, vertices, topology, UVs, and material. This prevents the texture rendering black in Cycles; all unique geometry is preserved.",
+    "GLB embeds both PNG textures. The supplied separate textures are preserved alongside it.",
+    "Blender import places PCB in XY, component side +Z, optical emitter/receiver toward +Y."
+  ],
+  "scale": {
+    "source_bounds_blender_m": [
+      1.2814735174179077,
+      3.980786085128784,
+      0.6486416459083557
+    ],
+    "prepared_uniform_scale": 0.012,
+    "prepared_bounds_m": [
+      0.015377683565020561,
+      0.04776943475008011,
+      0.007783700246363878
+    ],
+    "status": "Inferred working scale, not independently dimensionally verified.",
+    "basis": "Male header center spacing is approximately 0.21 authored units. Interpreting that as approximately 2.54 mm gives about 0.012 m per authored unit; PCB core becomes 15.24 x 30.74 mm."
+  },
+  "known_uncertainties": [
+    "Source metadata provides no creator, copyright, source URL, or license.",
+    "The original GLB uses arbitrary modeling scale; physical scale is an explicit inference."
+  ],
+  "original_download_folder": "infrared-sensor-ir-sensor",
+  "prepared_cleanup": {
+    "removed_object": "ir top.001",
+    "retained_identical_object": "ir top",
+    "reason": "Exact coplanar duplicate causes black material rendering in Cycles.",
+    "source_glb_modified": false
+  }
+}

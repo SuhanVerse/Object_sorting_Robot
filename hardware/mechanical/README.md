@@ -1,48 +1,38 @@
-# Mechanical design and Blender animation
+# OSS mechanical reconstruction
 
-## Updated visualization
+![Completed source-based assembly with opposite side bins and an end bin](../../docs/media/simulation-preview.png)
 
-![Updated conveyor visualization](../../docs/media/simulation-preview.png)
+Open [oss_simulation.blend](oss_simulation.blend) in **Blender 5.2.2 LTS**. Press Space to play frames 1–432 at 24 fps. Numpad 0 selects the assembly camera. Collections separate the recovered conveyor, downloaded electronics, sweep arm/bins, animated objects, and presentation setup. Viewport overlays are hidden initially; use the viewport overlays toggle if needed.
 
-[Watch the 15-second concept animation](../../docs/media/intended-sorting-simulation.mp4) or open [oss_simulation.blend](oss_simulation.blend) in **Blender 5.2.2 LTS**. Press Space to play frames 1–360 at 24 fps; Numpad 0 switches to the presentation camera. Named objects and materials are editable. The Timeline has phase markers, and an internal `READ ME | animation assumptions` text explains the model.
+The model completes the [original conveyor](conveyer_belt.blend) using the real prototype and [user concept](../../docs/media/oss-conceptual-model.png). It retains the frame, loop belt, rollers, shafts, bearings, camera bridge, NEMA17, and detailed servo. **A and B are on opposite sides; C is at the end.** A long side-mounted sweep arm replaces the previous outlet chute.
 
-The scene includes timber side rails, a blue belt, rollers, a stepper, camera gantry, two sensor housings, a conceptual controller, a servo-driven routing guide, and three bins. All geometry uses native primitives and procedural materials; the new scene has no external image dependencies or scripted drivers.
+Read [reference analysis](reference-analysis.md) for measured geometry and reconstruction decisions. [Downloaded asset notes](../assets/README.md) explain STEP conversion, IR scale, textures, and the retained native SKP.
 
-Each 120-frame cycle demonstrates loading, travel to the camera, a scan pause, routing, and reset. Cycles A, B, and C start at frames 1, 121, and 241. The belt texture and rollers move during travel; each object finishes in its illustrative destination bin.
+## Animation and playback
 
-This is a **keyframed kinematic concept**, not a rigid-body, sensor, firmware, or AI simulation. The 0.60 m belt length follows approximate proportions from the original scene, not measured fabrication dimensions. The routing guide and bin arrangement are visualization choices. Colors, gate angles, travel distances, and three five-second cycles are not verified hardware or model-label mappings.
+- [Animated GIF](../../docs/media/intended-sorting-preview.gif) plays directly in the main README.
+- Download [H.264 MP4](../../docs/media/intended-sorting-simulation.mp4) or [VP9 WebM](../../docs/media/intended-sorting-simulation.webm).
+- Run `python3 -m http.server 8765` from the repository root, then open [the local player](http://localhost:8765/docs/media/player.html).
 
-## Rebuild and render
+The three six-second cycles are keyframed explanations, not physics or firmware tests. Colors and A/B/C paths do not establish a trained-model mapping. The internal Blender text block records these assumptions.
 
-Run these commands from the repository root with Blender 5.2 and FFmpeg on PATH:
+## Rebuild
+
+With Blender and FFmpeg installed, from the repository root:
 
 ```sh
 blender --background --factory-startup --disable-autoexec --python scripts/blender/create_simulation.py -- --still docs/media/simulation-preview.png --frames-dir /tmp/oss-frames
-ffmpeg -framerate 24 -start_number 1 -i /tmp/oss-frames/frame_%04d.png -frames:v 360 -c:v libx264 -crf 20 -pix_fmt yuv420p -movflags +faststart -an docs/media/intended-sorting-simulation.mp4
-```
-
-The [generator](../../scripts/blender/create_simulation.py) writes the native scene before rendering. To render an edited scene instead, use:
-
-```sh
-blender --background --disable-autoexec hardware/mechanical/oss_simulation.blend --render-output /tmp/oss-frames/frame_ --frame-start 1 --frame-end 360 --render-anim
-```
-
-Validate native scene structure and key poses:
-
-```sh
+python3 scripts/media/encode_animation.py /tmp/oss-frames
 blender --background --disable-autoexec hardware/mechanical/oss_simulation.blend --python scripts/blender/validate_simulation.py -- docs/media/simulation-validation.json
 ```
 
-[Recorded validation](../../docs/media/simulation-validation.json) checks timeline, camera, scan holds, final positions, and lack of external image dependencies/drivers. It does not check physical collisions or fit. Refresh hashes in `docs/media/generated-assets.json` after intentional asset changes.
+The generator reads the original model and the two prepared asset libraries. [The original scene](conveyer_belt.blend), [backup](conveyer_belt.blend1), and [original render](../../docs/assets/conveyor-render.png) remain unchanged. Source checksums are recorded in the [inventory](../../docs/source-inventory.json).
 
-## Preserved source model
+To render a scene you edited manually, use Blender's Render Animation command or:
 
-| File | Description |
-| --- | --- |
-| [conveyer_belt.blend](conveyer_belt.blend) | Original primary Blender scene, unchanged |
-| [conveyer_belt.blend1](conveyer_belt.blend1) | Different original backup, unchanged |
-| [Original concept render](../../docs/assets/conveyor-render.png) | Recovered blender/Untitled.png, identical bytes |
+```sh
+blender --background --disable-autoexec hardware/mechanical/oss_simulation.blend --render-output /tmp/oss-frames/frame_ --frame-start 1 --frame-end 432 --render-anim
+python3 scripts/media/encode_animation.py /tmp/oss-frames
+```
 
-The original scene was opened successfully with Blender 5.2.2 LTS. It references five unavailable oak texture images; the updated scene avoids that dependency. Its dimensions and suitability for fabrication remain unvalidated. No STL files, measured drawings, or assembly measurements were supplied. Original spelling is retained for traceability.
-
-The [actual prototype photo and unsuccessful test video](../../docs/media/README.md) are separate from the concept render. See [source inventory](../../docs/source-inventory.md) for preserved-source hashes.
+Refresh `docs/media/generated-assets.json` after deliberate changes. No STL, measured fabrication drawing, or calibrated hardware geometry is claimed. Local pre-rebuild edits were backed up under the ignored `.local-backups/` directory.

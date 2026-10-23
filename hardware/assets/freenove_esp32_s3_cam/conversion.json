@@ -1,0 +1,465 @@
+{
+  "source_filename": "Freenove ESP32-S3-WROOM-CAM.step",
+  "source_sha256": "4f67dbb21f54c48544d73c01f60edcb3136c9e5cfe0aa512022fa5eab64247fe",
+  "output_filename": "freenove_esp32_s3_cam.glb",
+  "output_sha256": "595fe25c582041feb8fec4d6a4928e332f7bc468c7bb71427d78a093a6a23709",
+  "output_size_bytes": 5541668,
+  "converter": "cadquery-ocp 8.0.1.1.0 / OpenCascade XCAF RWGltf_CafWriter",
+  "units": {
+    "opencascade_internal": "millimeter",
+    "export": "meter",
+    "input_length_scale_to_m": 0.001
+  },
+  "coordinates": {
+    "input": "CAD Z-up, preserved on Blender glTF import",
+    "glb": "glTF Y-up"
+  },
+  "tessellation": {
+    "linear_deflection_mm": 0.05,
+    "angular_deflection_radians": 0.35
+  },
+  "cad_bounds_mm": {
+    "min": [
+      -31.508768981014804,
+      -14.210000000000026,
+      -14.100000099999999
+    ],
+    "max": [
+      25.708781263577812,
+      3.2600000000000042,
+      14.100000099999999
+    ],
+    "size": [
+      57.217550244592616,
+      17.47000000000003,
+      28.200000199999998
+    ]
+  },
+  "root_count": 1,
+  "gltf_node_count": 287,
+  "gltf_mesh_count": 223,
+  "gltf_material_count": 35,
+  "gltf_materials": [
+    {
+      "name": "mat_0",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.009721217676997185,
+          0.009721217676997185,
+          0.009721217676997185,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9046611785888672,
+          0.7835378050804138,
+          0.38642942905426025,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_2",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9130986332893372,
+          0.9130986332893372,
+          0.9215818643569946,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_3",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.03310476616024971,
+          0.03310476616024971,
+          0.03310476616024971,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_4",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.04666508734226227,
+          0.0423114113509655,
+          0.0423114113509655,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_5",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9215818643569946,
+          0.9215818643569946,
+          0.8962693810462952,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_6",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.05126945674419403,
+          0.05126945674419403,
+          0.05126945674419403,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_7",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9130986332893372,
+          0.0027317428030073643,
+          0.0027317428030073643,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_8",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.05780543014407158,
+          0.3049873113632202,
+          0.06480326503515244,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_9",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.02955683507025242,
+          0.04373503103852272,
+          0.3049873113632202,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_10",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_11",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5520114302635193,
+          0.03560131415724754,
+          0.020288562402129173,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_12",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.38132601976394653,
+          0.2015562504529953,
+          0.0015176349552348256,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_13",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_14",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.05951123684644699,
+          0.5149176716804504,
+          0.18116424977779388,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_15",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9911020994186401,
+          0.0802198201417923,
+          0.0,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_16",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7454041838645935,
+          0.7454041838645935,
+          0.7454041838645935,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_17",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.44520118832588196,
+          0.44520118832588196,
+          0.44520118832588196,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_18",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.01032982300966978,
+          0.01032982300966978,
+          0.01032982300966978,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_19",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6514056324958801,
+          0.672443151473999,
+          0.6514056324958801,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_20",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.5906188488006592,
+          0.13563333451747894,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_21",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5520114302635193,
+          0.5520114302635193,
+          0.5520114302635193,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_22",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.4910208582878113,
+          0.10461648553609848,
+          0.0018211619462817907,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_23",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5906188488006592,
+          0.637596845626831,
+          0.8549926280975342,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_24",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          0.19806931912899017,
+          0.004776953253895044,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_25",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2158605009317398,
+          0.2158605009317398,
+          0.2158605009317398,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_26",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5271151065826416,
+          0.5271151065826416,
+          0.5271151065826416,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_27",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2581828534603119,
+          0.13013647496700287,
+          0.002428215928375721,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_28",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6514056324958801,
+          0.6514056324958801,
+          0.6514056324958801,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_29",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8069522380828857,
+          0.28744083642959595,
+          0.023153366521000862,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_30",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6038273572921753,
+          0.6038273572921753,
+          0.6038273572921753,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_31",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.05612849071621895,
+          0.06480326503515244,
+          0.07421357184648514,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_32",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.05780543014407158,
+          0.18447498977184296,
+          0.13286831974983215,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_33",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.637596845626831,
+          0.6038273572921753,
+          0.5271151065826416,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "mat_34",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9646862745285034,
+          0.9559733271598816,
+          0.9130986332893372,
+          1.0
+        ]
+      },
+      "doubleSided": true
+    }
+  ],
+  "license": "Unknown; no license statement was present in the supplied STEP header."
+}

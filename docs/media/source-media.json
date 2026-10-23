@@ -23,6 +23,13 @@
         "height": 864,
         "nominal_frame_rate": "60/1"
       }
+    },
+    {
+      "source_basename": "oss_conceptual_model.png",
+      "destination": "docs/media/oss-conceptual-model.png",
+      "sha256": "08164261f878f384ad4e6c65b0c3da58451b0768e648ef72f9f702b8409f4fe4",
+      "status": "concept_drawing",
+      "byte_preserved": true
     }
   ]
 }

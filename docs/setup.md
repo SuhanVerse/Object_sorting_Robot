@@ -51,9 +51,9 @@ Serial at **115200** prints PSRAM status and collection-server address. The sket
 
 ## Blender visualization
 
-Open [oss_simulation.blend](../hardware/mechanical/oss_simulation.blend) in Blender **5.2.2 LTS**, the version used to create and validate it. Press Space to play frames 1–360 at 24 fps. The scene shows three illustrative sorting cycles, with pauses at the camera and a rotating routing guide.
+Open [oss_simulation.blend](../hardware/mechanical/oss_simulation.blend) in Blender **5.2.2 LTS**. It reconstructs the original model and the supplied concept: two side bins, one end bin, and a long servo sweep arm. Press Space to play frames 1–432 at 24 fps.
 
-[The mechanical guide](../hardware/mechanical/README.md) covers scene controls, assumptions, regeneration, and video rendering. The original scene and backup are also preserved. This is a keyframed concept, not a physics or firmware simulation.
+The [mechanical guide](../hardware/mechanical/README.md) explains retained source parts, downloaded CAD assets, nominal dimensions, and rebuilding. The [media guide](media/README.md) provides MP4/WebM downloads, an inline GIF, and a local browser player. This is a keyframed illustration; it does not run physics, firmware, or AI inference.
 
 ## Troubleshooting
 

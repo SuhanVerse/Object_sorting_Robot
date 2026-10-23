@@ -40,13 +40,17 @@ The Python check covers imported-file hashes, both ZIPs and their 2,668 preserve
 
 The optional source check compares the original files, verifies only the documented credential substitutions, and compares both original model trees. Supply local folder paths using the repeatable `--source-root NAME=PATH` option, or use the ignored placeholder folders described in the [inventory](source-inventory.md). Overrides do not rewrite the public inventory. Imported sketches retain their original whitespace, including trailing spaces; the staged whitespace check excludes those preserved files. GitHub Actions runs the portable check on pushes and pull requests; it does not compile firmware.
 
-The supplied render, actual prototype photo, and contact sheet of the unsuccessful test video were visually inspected. The retained technical reference was reviewed by text extraction. The original Blender scene opens in Blender 5.2.2 LTS but has missing texture dependencies. Its source bytes are preserved. The new visualization uses procedural materials and no external image dependencies.
+The supplied render, actual prototype photo, and contact sheet of the unsuccessful test video were visually inspected. The retained technical reference was reviewed by text extraction. The original Blender scene opens in Blender 5.2.2 LTS but has missing texture dependencies. Its source bytes are preserved. The new reconstruction packs the downloaded IR textures and appends the prepared asset geometry, with no linked external files.
 
-## Blender visualization
+## Blender reconstruction and playback
 
-The [updated scene](../hardware/mechanical/oss_simulation.blend) was created and reopened in Blender **5.2.2 LTS**. [Native scene validation](media/simulation-validation.json) checks 360 frames at 24 fps, the presentation camera, scan-position holds, three final bin positions, and absence of external image dependencies or scripted drivers. It explicitly does not validate physics, collision clearance, electrical behavior, firmware timing, or AI accuracy.
+The [updated scene](../hardware/mechanical/oss_simulation.blend) was created and reopened in Blender **5.2.2 LTS**. It retains 12 source meshes, including the original 25,378-vertex motor. The measured source frame has a 90 mm rail gap; its original loop belt is widened to 88 mm. The drive group is raised together by 4 mm.
 
-The [concept video](media/intended-sorting-simulation.mp4) is rendered at 1280 × 720 for 15 seconds with a persistent simulation label. It is separate from the original [unsuccessful prototype test](media/prototype-test-not-working.mp4). See the [media guide](media/README.md) for provenance and checksums.
+[Native validation](media/simulation-validation.json) checks the retained parts, the Freenove board's 223 meshes, two IR sensor instances of 34 meshes each, packed textures, opposite-side A/B and end C bins, 432 frames at 24 fps, scan-position holds, final bin positions, and the servo's angular range. This is structural/keyframe verification; physical contact, clearance, fit, hardware calibration, firmware timing, and AI accuracy are not validated.
+
+The source-based [animation](media/README.md) is 18 seconds at 1280 × 720. Delivery includes H.264 baseline MP4, VP9 WebM, an 800-pixel looping GIF, and a local HTML player. [Playback results](media/playback-validation.json) record actual browser checks. All three routes are visually reviewed through sampled rendered frames.
+
+The original MP4 was browser-decodable; the old README provided a file link, not an embedded player. The new GIF is directly visible in GitHub; the HTML player is tested through a local HTTP server. Repository visibility remains private.
 
 ## Remaining gaps
 

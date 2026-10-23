@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSS — reconstructed conveyor animation</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; }
+    h1 { font-size: clamp(1.4rem, 4vw, 2rem); margin-bottom: .4rem; }
+    video { width: 100%; background: #202326; border-radius: 4px; }
+    a { color: #3277cb; }
+    .note { padding: .8rem 1rem; border-left: 3px solid #777; }
+    #status { font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <h1>Object Sorting System</h1>
+  <p>Reconstruction from the original Blender assembly, the physical prototype, and the supplied concept drawing.</p>
+  <video id="oss-video" controls playsinline preload="metadata" poster="simulation-preview.png?v=a29293bf9715">
+    <source src="intended-sorting-simulation.mp4?v=7cf3e4ac67b0" type='video/mp4; codecs="avc1.42C01F"'>
+    <source src="intended-sorting-simulation.webm?v=7e93ecf34a4c" type='video/webm; codecs="vp9"'>
+  </video>
+  <p id="status" aria-live="polite">Choose Play to start the 18-second animation.</p>
+  <p><a href="intended-sorting-simulation.mp4?v=7cf3e4ac67b0" download>Download MP4</a> ·
+     <a href="intended-sorting-simulation.webm?v=7e93ecf34a4c" download>Download WebM</a> ·
+     <a href="intended-sorting-preview.gif?v=0f4e3ce87823">Animated GIF</a> ·
+     <a href="../../hardware/mechanical/oss_simulation.blend">Editable Blender scene</a></p>
+  <p class="note">Bin A is on one side, Bin B on the opposite side, and Bin C at the end. This is a keyframed illustration of intended motion, not a physics, firmware, or AI test.</p>
+  <p><a href="prototype-photo.jpeg">Real exhibition prototype</a> ·
+     <a href="oss-conceptual-model.png">Original concept drawing</a> ·
+     <a href="prototype-test-not-working.mp4">Original unsuccessful hardware test</a></p>
+  <script>
+    const video = document.getElementById('oss-video');
+    const status = document.getElementById('status');
+    video.addEventListener('loadedmetadata', () => {
+      status.textContent = `${video.duration.toFixed(0)} seconds · ${video.videoWidth} × ${video.videoHeight} · ready to play`;
+    });
+    video.addEventListener('error', () => {
+      status.textContent = 'This browser could not load the video. Try the MP4 or WebM download link above, or view the animated GIF.';
+    });
+  </script>
+</body>
+</html>

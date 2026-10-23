@@ -1,14 +1,32 @@
 # Object Sorting System (OSS)
 
-A conveyor sorting project for embedded-systems and machine-vision experiments. An Arduino Uno drives the conveyor and servo gate; camera experiments explore object recognition with an ESP32 and Edge Impulse.
+A conveyor-based object-sorting project built as an exhibition project for **YATRA 5.0**, a national event. An Arduino Uno controls the belt and servo; ESP32 camera experiments provide image collection and object-recognition work.
 
-![Updated Blender visualization showing the conveyor, camera station, servo routing guide, and three bins](docs/media/simulation-preview.png)
+<p align="center">
+  <img src="docs/media/prototype-photo.jpeg" width="340" alt="The real OSS exhibition prototype: blue belt, timber rails, camera bridge, Arduino controller, and wiring">
+</p>
 
-[Watch the intended sorting animation](docs/media/intended-sorting-simulation.mp4) · [Open the editable Blender scene](hardware/mechanical/oss_simulation.blend)
+*The physical prototype built for the exhibition. The [original hardware test video](docs/media/prototype-test-not-working.mp4) records a test when it did not work as intended.*
 
-*Concept simulation of intended motion. It does not demonstrate working hardware or AI accuracy.*
+## Intended mechanism
 
-This repository brings together a technical reference, mechanical designs, seven Arduino sketches, and two recovered model exports. The sketches represent different experiments. **A complete camera-to-AI-to-conveyor firmware was not found:** the paired camera test sends dummy A/B/C decisions, and the inference sketch only prints predictions.
+![Original Excalidraw concept: camera over the input, side-mounted servo sweep arm, bins A and B on opposite sides, and bin C at the end](docs/media/oss-conceptual-model.png)
+
+The drawing places **Bin A on one side of the conveyor, Bin B on the other, and Bin C at the end**. A long arm driven by a side-mounted servo moves objects into the side bins; objects assigned to C continue to the end.
+
+## Reconstructed Blender model
+
+[![Animation reconstructed from the original conveyor model and the concept drawing](docs/media/intended-sorting-preview.gif)](https://github.com/SuhanVerse/Object_sorting_Robot/raw/refs/heads/main/docs/media/intended-sorting-simulation.mp4)
+
+The original frame, loop belt, rollers, bearings, camera bridge, NEMA17, and servo meshes are retained. Downloaded IR sensor and Freenove board models supply the electronics detail. The [reconstruction notes](hardware/mechanical/reference-analysis.md) record measured source geometry, changes, and assumptions.
+
+[Download MP4](https://github.com/SuhanVerse/Object_sorting_Robot/raw/refs/heads/main/docs/media/intended-sorting-simulation.mp4) · [Download WebM](https://github.com/SuhanVerse/Object_sorting_Robot/raw/refs/heads/main/docs/media/intended-sorting-simulation.webm) · [Editable Blender scene](hardware/mechanical/oss_simulation.blend)
+
+The GIF plays directly in this README. To use the browser player after cloning, run `python3 -m http.server 8765` from the repository root and open [http://localhost:8765/docs/media/player.html](http://localhost:8765/docs/media/player.html). GitHub's repository file links are downloads, not an embedded video player.
+
+*The 18-second animation illustrates intended motion. It is keyframed, with no physical dynamics, firmware, or inference solver running.*
+
+The repository includes seven Arduino sketches and two recovered model exports. A complete AI-to-conveyor firmware was not found: the paired camera test sends dummy A/B/C decisions, while the inference sketch prints predictions. See the [architecture](docs/architecture.md) for current implementation status.
 
 ## Which code should I use?
 
@@ -23,10 +41,6 @@ This repository brings together a technical reference, mechanical designs, seven
 | Find servo angles using Serial Monitor | [servo_test](firmware/calibration/servo_test/servo_test.ino) | Uno |
 
 Read the [firmware guide](firmware/README.md) for behavior, pairing, dependencies, and limitations. Original sketch names are retained so they remain recognizable in Arduino IDE.
-
-## Prototype photo and test video
-
-[View the actual prototype photo](docs/media/prototype-photo.jpeg) and [the original unsuccessful test video](docs/media/prototype-test-not-working.mp4). The robot did **not** work as intended in that footage; it is retained as a test record. [Media notes](docs/media/README.md) distinguish this recording from the Blender animation.
 
 ## Start with the standalone conveyor
 
